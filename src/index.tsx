@@ -1,10 +1,4 @@
-import * as React from 'react'
-import styles from './styles.module.css'
+import { ReactAudioRecorder } from './react-audio-recorder/ReactAudioRecorder'
+import { useAudioRecorder } from './react-audio-recorder/useAudioRecorder'
 
-interface Props {
-  text: string
-}
-
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+export { ReactAudioRecorder, useAudioRecorder }

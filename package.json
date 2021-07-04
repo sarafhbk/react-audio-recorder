@@ -55,7 +55,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1",
-    "typescript": "^3.7.5"
+    "typescript": "^3.7.5",
+    "@types/dom-mediacapture-record": "^1.0.7"
   },
   "files": [
     "dist"
