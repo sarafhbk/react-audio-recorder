@@ -28,6 +28,7 @@ export const useAudioRecorder = () => {
   const startRecording = () => {
     if (status === RECORD_STATUS.IDLE) {
       try {
+        setErrorMessage('')
         navigator.mediaDevices
           .getUserMedia({ audio: true })
           .then((mediaStreamObj: MediaStream) => {
