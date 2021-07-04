@@ -31,8 +31,6 @@ yarn add @sarafhbk/react-audio-recorder
 | pauseRecording  | method | -                  | Call this method to pause recording.  |
 | resumeRecording | method | -                  | Call this method to resume recording. |
 
-##
-
 ## Usage (Class Version)
 
 ```tsx
