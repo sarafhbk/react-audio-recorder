@@ -1,6 +1,6 @@
 {
   "name": "@sarafhbk/react-audio-recorder",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "This is a simple audio recorder package for react application using the javascript Web Audio API.",
   "author": "sarafhbk",
   "license": "MIT",

@@ -6,7 +6,7 @@
 
 # Demo
 
-Checkout the [Demo](https://sarafhbk.github.io/react-audio-recorder)
+Checkout the [Demo.](https://sarafhbk.github.io/react-audio-recorder)
 
 ## Install
 
@@ -31,9 +31,9 @@ yarn add @sarafhbk/react-audio-recorder
 | pauseRecording  | method | -                  | Call this method to pause recording.  |
 | resumeRecording | method | -                  | Call this method to resume recording. |
 
-## Usage
+##
 
-## Class Version
+## Usage (Class Version)
 
 ```tsx
 import React, { Component } from 'react'
@@ -79,7 +79,7 @@ class Example extends Component {
 }
 ```
 
-## Hooks Version
+## Usage (Hooks Version)
 
 ```tsx
 import React from 'react'
