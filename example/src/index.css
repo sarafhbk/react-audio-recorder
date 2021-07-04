@@ -1,24 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 .container {
-  background-color: rgb(249, 249, 249);
+  background-color: rgb(34, 28, 69);
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.error {
+  font-size: 2rem;
+  color: red;
+  text-transform: capitalize;
+}
+
+.status {
+  font-size: 2rem;
+  color: white;
+  text-transform: capitalize;
+}
 
 .timer {
-  font-size: 20px;
+  font-size: 6rem;
   font-weight: 500;
-  letter-spacing: 2px;
+  letter-spacing: 0.2rem;
+  color: white;
+}
+.blink-animation {
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 audio {
   margin: 12px 0;
 }
 .buttons {
-  margin: 12px 0;
+  margin-top: 2.4rem;
+  display: flex;
+  align-items: center;
 }
 button {
+  border: none;
+  cursor: pointer;
   margin: 6px;
+  border-radius: 50%;
+  color: white;
+}
+
+.btn-record {
+  background-image: linear-gradient(rgb(255, 45, 185), rgb(255, 125, 136));
+  width: 6rem;
+  height: 6rem;
+  font-size: 2rem;
+}
+.btn-stop {
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.5rem;
+  background-image: linear-gradient(rgb(116, 80, 255), rgb(144, 118, 255));
+}
+.btn-play {
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.5rem;
+  background-image: linear-gradient(rgb(249, 199, 129), rgb(253, 226, 145));
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

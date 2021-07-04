@@ -1,5 +1,5 @@
 import React from 'react'
-import { useAudioRecorder } from '@sarafhbk/react-audio-recorder'
+import { RECORD_STATUS, useAudioRecorder } from '@sarafhbk/react-audio-recorder'
 
 function HooksVersion() {
   const {
@@ -9,27 +9,45 @@ function HooksVersion() {
     stopRecording,
     pauseRecording,
     resumeRecording,
-    status
+    status,
+    errorMessage
   } = useAudioRecorder()
   return (
     <div className='container'>
-      <p>
-        Status : <b>{status}</b>
-      </p>
-      {audioResult ? null : (
-        <div className='container'>
-          <p className='timer'>
-            {new Date(timer * 1000).toISOString().substr(11, 8)}
-          </p>
-          <div className='buttons'>
-            <button onClick={startRecording}>Start</button>
-            <button onClick={stopRecording}>Stop</button>
-            <button onClick={pauseRecording}>Pause</button>
-            <button onClick={resumeRecording}>Resume</button>
-          </div>
+      <div className='inner-container'>
+        <audio controls src={audioResult} />
+        <p
+          className={`timer ${
+            status === RECORD_STATUS.PAUSED ? 'blink-animation' : ''
+          }`}
+        >
+          {new Date(timer * 1000).toISOString().substr(11, 8)}
+        </p>
+        <p className='status'>{status}</p>
+        <p className='error'>{errorMessage}</p>
+        <div className='buttons'>
+          <button
+            className='btn-play'
+            onClick={
+              status === RECORD_STATUS.RECORDING
+                ? pauseRecording
+                : resumeRecording
+            }
+          >
+            <i
+              className={`fas fa-${
+                status === RECORD_STATUS.RECORDING ? 'pause' : 'play'
+              }`}
+            ></i>
+          </button>
+          <button className='btn-record' onClick={startRecording}>
+            <i className={'fas fa-microphone'}></i>
+          </button>
+          <button className='btn-stop' onClick={stopRecording}>
+            <i className={'fas fa-stop'}></i>
+          </button>
         </div>
-      )}
-      {audioResult ? <audio controls src={audioResult} /> : null}
+      </div>
     </div>
   )
 }
