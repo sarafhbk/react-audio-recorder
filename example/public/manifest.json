@@ -1,6 +1,6 @@
 {
-  "short_name": "react-audio-recorder",
-  "name": "react-audio-recorder",
+  "short_name": "@sarafhbk/react-audio-recorder",
+  "name": "@sarafhbk/react-audio-recorder",
   "icons": [
     {
       "src": "favicon.ico",

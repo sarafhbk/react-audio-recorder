@@ -1,5 +1,5 @@
 import React from 'react'
-import { useAudioRecorder } from 'react-audio-recorder'
+import { useAudioRecorder } from '@sarafhbk/react-audio-recorder'
 
 function HooksVersion() {
   const {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { ReactAudioRecorder } from 'react-audio-recorder'
+import { ReactAudioRecorder } from '@sarafhbk/react-audio-recorder'
 
 function ClassVersion() {
   return (

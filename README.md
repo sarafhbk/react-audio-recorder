@@ -1,4 +1,4 @@
-# react-audio-recorder
+# @sarafhbk/react-audio-recorder
 
 > This is a simple audio recorder package for react application using the javascript [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API).
 
@@ -34,8 +34,8 @@ yarn add @sarafhbk/react-audio-recorder
 ```tsx
 import React, { Component } from 'react'
 
-import { ReactAudioRecorder } from 'react-audio-recorder'
-import 'react-audio-recorder/dist/index.css'
+import { ReactAudioRecorder } from '@sarafhbk/react-audio-recorder'
+import '@sarafhbk/react-audio-recorder/dist/index.css'
 
 class Example extends Component {
   render() {
@@ -81,8 +81,8 @@ class Example extends Component {
 ```tsx
 import React from 'react'
 
-import { useAudioRecorder } from 'react-audio-recorder'
-import 'react-audio-recorder/dist/index.css'
+import { useAudioRecorder } from '@sarafhbk/react-audio-recorder'
+import '@sarafhbk/react-audio-recorder/dist/index.css'
 
 function Example() {
   const {
