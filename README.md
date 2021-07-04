@@ -7,7 +7,11 @@
 ## Install
 
 ```bash
+
 npm install --save react-audio-recorder
+
+yarn add react-audio-recorder
+
 ```
 
 ## Props
