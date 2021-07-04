@@ -1,6 +1,6 @@
 # react-audio-recorder
 
-> Hello
+> This is a simple audio recorder package for react application using the javascript Web Audio API.
 
 [![NPM](https://img.shields.io/npm/v/react-audio-recorder.svg)](https://www.npmjs.com/package/react-audio-recorder) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
