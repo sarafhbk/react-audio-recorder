@@ -2,15 +2,15 @@
 
 > This is a simple audio recorder package for react application using the javascript [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API).
 
-[![NPM](https://img.shields.io/npm/v/react-audio-recorder.svg)](https://www.npmjs.com/package/react-audio-recorder) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/@sarafhbk/react-audio-recorder.svg)](https://www.npmjs.com/package/@sarafhbk/react-audio-recorder) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
 
-npm install --save react-audio-recorder
+npm install --save @sarafhbk/react-audio-recorder
 
-yarn add react-audio-recorder
+yarn add @sarafhbk/react-audio-recorder
 
 ```
 
