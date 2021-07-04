@@ -4,6 +4,10 @@
 
 [![NPM](https://img.shields.io/npm/v/@sarafhbk/react-audio-recorder.svg)](https://www.npmjs.com/package/@sarafhbk/react-audio-recorder) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+# Demo
+
+Checkout the [Demo](https://sarafhbk.github.io/react-audio-recorder)
+
 ## Install
 
 ```bash
@@ -47,26 +51,26 @@ class Example extends Component {
           resumeRecording,
           pauseRecording,
           audioResult,
-          status
+          status,
+          errorMessage
         }) => (
-          <div className='container'>
+          <div>
+            <audio controls src={audioResult} />
             <p>
               Status : <b>{status}</b>
             </p>
-            {audioResult ? null : (
-              <div className='container'>
-                <p className='timer'>
-                  {new Date(timer * 1000).toISOString().substr(11, 8)}
-                </p>
-                <div className='buttons'>
-                  <button onClick={startRecording}>Start</button>
-                  <button onClick={stopRecording}>Stop</button>
-                  <button onClick={pauseRecording}>Pause</button>
-                  <button onClick={resumeRecording}>Resume</button>
-                </div>
+            <p>
+              Error Message : <b>{errorMessage}</b>
+            </p>
+            <div>
+              <p>{new Date(timer * 1000).toISOString().substr(11, 8)}</p>
+              <div>
+                <button onClick={startRecording}>Start</button>
+                <button onClick={stopRecording}>Stop</button>
+                <button onClick={pauseRecording}>Pause</button>
+                <button onClick={resumeRecording}>Resume</button>
               </div>
-            )}
-            {audioResult ? <audio controls src={audioResult} /> : null}
+            </div>
           </div>
         )}
       />
@@ -90,27 +94,27 @@ function Example() {
     stopRecording,
     pauseRecording,
     resumeRecording,
-    status
+    status,
+    errorMessage
   } = useAudioRecorder()
   return (
-    <div className='container'>
+    <div>
+      <audio controls src={audioResult} />
       <p>
         Status : <b>{status}</b>
       </p>
-      {audioResult ? null : (
-        <div className='container'>
-          <p className='timer'>
-            {new Date(timer * 1000).toISOString().substr(11, 8)}
-          </p>
-          <div className='buttons'>
-            <button onClick={startRecording}>Start</button>
-            <button onClick={stopRecording}>Stop</button>
-            <button onClick={pauseRecording}>Pause</button>
-            <button onClick={resumeRecording}>Resume</button>
-          </div>
+      <p>
+        Error Message : <b>{errorMessage}</b>
+      </p>
+      <div>
+        <p>{new Date(timer * 1000).toISOString().substr(11, 8)}</p>
+        <div>
+          <button onClick={startRecording}>Start</button>
+          <button onClick={stopRecording}>Stop</button>
+          <button onClick={pauseRecording}>Pause</button>
+          <button onClick={resumeRecording}>Resume</button>
         </div>
-      )}
-      {audioResult ? <audio controls src={audioResult} /> : null}
+      </div>
     </div>
   )
 }
