@@ -1,6 +1,6 @@
 # react-audio-recorder
 
-> This is a simple audio recorder package for react application using the javascript Web Audio API.
+> This is a simple audio recorder package for react application using the javascript [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API).
 
 [![NPM](https://img.shields.io/npm/v/react-audio-recorder.svg)](https://www.npmjs.com/package/react-audio-recorder) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -9,6 +9,19 @@
 ```bash
 npm install --save react-audio-recorder
 ```
+
+## Props
+
+| Property name   | Type   | Default            | Description                           |
+| --------------- | ------ | ------------------ | ------------------------------------- |
+| status          | string | RECORD_STATUS.IDLE | RECORD_STATUS.(IDLE,RECORDING,PAUSED) |
+| audioResult     | string | -                  | Result blob url.                      |
+| errorMessage    | string | -                  | Error messages.                       |
+| timer           | number | -                  | Record timer (in secs).               |
+| startRecording  | method | -                  | Call this method to start recording.  |
+| stopRecording   | method | -                  | Call this method to stop recording.   |
+| pauseRecording  | method | -                  | Call this method to pause recording.  |
+| resumeRecording | method | -                  | Call this method to resume recording. |
 
 ## Usage
 
