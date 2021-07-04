@@ -1,6 +1,6 @@
 {
   "name": "@sarafhbk/react-audio-recorder",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "This is a simple audio recorder package for react application using the javascript [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API).",
   "author": "sarafhbk",
   "license": "MIT",
@@ -60,5 +60,18 @@
   },
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "audio",
+    "record",
+    "audio recorder",
+    "voice",
+    "voice recorder",
+    "react voice recorder",
+    "react audio recorder",
+    "react audio permission",
+    "record timer",
+    "react record audio",
+    "react record voice"
   ]
 }
