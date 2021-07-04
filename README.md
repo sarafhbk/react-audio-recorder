@@ -1,6 +1,6 @@
 # react-audio-recorder
 
-> &#x27;&#x27; Hello
+> Hello
 
 [![NPM](https://img.shields.io/npm/v/react-audio-recorder.svg)](https://www.npmjs.com/package/react-audio-recorder) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
