@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-audio-recorder/static/css/main.fc93aec4.chunk.css",
+    "main.js": "/react-audio-recorder/static/js/main.fb5a45d4.chunk.js",
+    "main.js.map": "/react-audio-recorder/static/js/main.fb5a45d4.chunk.js.map",
+    "runtime-main.js": "/react-audio-recorder/static/js/runtime-main.e2944ee6.js",
+    "runtime-main.js.map": "/react-audio-recorder/static/js/runtime-main.e2944ee6.js.map",
+    "static/js/2.47d29443.chunk.js": "/react-audio-recorder/static/js/2.47d29443.chunk.js",
+    "static/js/2.47d29443.chunk.js.map": "/react-audio-recorder/static/js/2.47d29443.chunk.js.map",
+    "index.html": "/react-audio-recorder/index.html",
+    "precache-manifest.02806ca9991d2fa6758129a8e6f53cb7.js": "/react-audio-recorder/precache-manifest.02806ca9991d2fa6758129a8e6f53cb7.js",
+    "service-worker.js": "/react-audio-recorder/service-worker.js",
+    "static/css/main.fc93aec4.chunk.css.map": "/react-audio-recorder/static/css/main.fc93aec4.chunk.css.map",
+    "static/js/2.47d29443.chunk.js.LICENSE.txt": "/react-audio-recorder/static/js/2.47d29443.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e2944ee6.js",
+    "static/js/2.47d29443.chunk.js",
+    "static/css/main.fc93aec4.chunk.css",
+    "static/js/main.fb5a45d4.chunk.js"
+  ]
+}
